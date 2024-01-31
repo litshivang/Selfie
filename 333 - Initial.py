@@ -18,6 +18,7 @@ for index, row in df.iterrows():
 
     # Check if filenames are not NaN
     if not pd.isna(row['in_selfie_file']):
+
         in_selfie_file = str(row['in_selfie_file'])
         in_selfie_src = os.path.join(selfie_folder, in_selfie_file)
         in_selfie_dst = os.path.join(output_folder, employee_name, in_selfie_file)
